@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raheed Bride | عروس رهيد</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+  <header class="navbar">   
+ 
+    <img src="images/Logo-01.png" alt="Raheed Logo" class="logo">
+
+  </header>
+
+  <section class="collection">
+    <div class="overlay">
+      <h1>NEW COLLECTION</h1>
+      <div class="underline"></div>
+    </div>
+  </section>
+
+  <div class="b">
+<h2>Our Locations</h2>
+
+  <div class="branches">
+    <div class="branch">
+      <iframe src="https://www.google.com/maps?q=24.694972,46.699167&z=17&output=embed"></iframe>
+      <h3>بوتيك الرياض</h3>
+    
+
+       <div class="phone">
+  <a href="tel:0544672284">05454393894</a>
+</div>
+    </div>
+
+    <div class="branch">
+      <iframe src="https://www.google.com/maps?q=21.573889,39.135&z=17&output=embed"></iframe>
+      <h3>بوتيك جدة</h3>
+      <div class="phone">
+  <a href="tel:0544672284">0544672284</a>
+</div>
+
+    </div>
+  </div>
+
+  <div class="social">
+    <h3>✨Contact as ✨</h3>
+    <div class="icons">
+    <a href="https://api.whatsapp.com/send/?phone=966569522745&text&type=phone_number&app_absent=0"><img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp"></a>  
+      <a href="https://www.instagram.com/raheedbrides/?igsh=MXRqcnNnc3M2MTF0Yg%3D%3D#"><img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram"></a>
+      <a href="https://www.tiktok.com/@raheedbrides?_t=8j5aibux0fF&_r=1"><img src="https://img.icons8.com/color/48/tiktok--v1.png" alt="TikTok"></a>
+      <a href="https://www.snapchat.com/add/raheedbrides"><img src="https://img.icons8.com/color/48/snapchat.png" alt="Snapchat"></a>
+     <a href="https://www.linkedin.com/company/raheedbrides"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"></a> 
+     <a href="https://www.youtube.com/@raheedbrides"><img src="https://img.icons8.com/color/48/youtube-play.png" alt="YouTube"></a> 
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <div class="parent">
+    <h2 class="c">Summer 2025</h2>
+  </div>
+<div class="sli">
+
+  <div class="slider-container">
+
+    
+
+       <button class="arrow left-arrow" onclick="prevSlide()">&#10095;</button>
+   
+
+    <div class="slide active">
+      <img src="images/1.jpg" alt="Dress 1">
+    </div>
+    <div class="slide">
+      <img src="images/2.jpg" alt="Dress 2">
+    </div>
+    <div class="slide">
+      <img src="images/3.jpg" alt="Dress 3">
+    </div>
+    <div class="slide">
+      <img src="images/4.jpg" alt="Dress 4">
+    </div>
+    <div class="slide">
+      <img src="images/5.jpg" alt="Dress 5">
+
+      
+    </div>
+
+
+
+      <button class="arrow right-arrow" onclick="nextSlide()">&#10094;</button>
+
+  
+  </div>
+<div class="dots-container">
+  <span class="dot active" onclick="goToSlide(0)"></span>
+  <span class="dot" onclick="goToSlide(1)"></span>
+  <span class="dot" onclick="goToSlide(2)"></span>
+  <span class="dot" onclick="goToSlide(3)"></span>
+  <span class="dot" onclick="goToSlide(4)"></span>
+</div>
+</div>
+
+
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Auto slide every 2 seconds (2000 ms)
+  setInterval(nextSlide, 4000);
+
+
+  const dots = document.querySelectorAll('.dot');
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+}
+
+function goToSlide(index) {
+  currentSlide = index;
+  showSlide(currentSlide);
+}
+
+</script>
+</body>
+</html>

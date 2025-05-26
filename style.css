@@ -1,0 +1,349 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+
+  
+
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  direction: rtl;
+  background-color: rgb(250, 249, 249);
+  color: #222;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  padding: 0rem 1rem;
+  background: rgb(250, 249, 249);
+  border-bottom: 1px solid #ccc;
+}
+
+.phone a {
+  text-decoration: none;
+  color: inherit; /* or choose your color */
+  font-weight: bold;
+}
+
+.navbar .logo {
+  height: 100px;
+
+          
+}
+
+
+/* Collection Section */
+/* Collection Section */
+.collection {
+  height: 300px;
+  background: url('images/cover.jpg') center center / cover no-repeat;
+  background-attachment: fixed; /* الصورة تبقى ثابتة */
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.collection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: 1;
+}
+
+.collection .overlay {
+  position: relative;
+  z-index: 2;
+ /* Optional: extra layer */
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.collection h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: 'Aref Ruqaa', Arial; 
+ 
+}
+
+.collection .underline {
+  width: 80px;
+  height: 6px;
+  background: #ffc107;
+  margin: 0 auto;
+}
+
+/* Branches Section */
+.branches {
+  padding: 2rem;
+  text-align: center;
+}
+
+.branches h3 {
+  font-size: 1.5rem;
+  margin:  40px 3rem ;
+    background-color: rgb(246, 244, 244);
+    border-radius: 10px;
+
+
+
+}
+
+.maps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 5px;
+}
+
+.map-box {
+  width: 300px;
+  text-align: center;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 250px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.b {
+      font-family: 'Cairo', sans-serif;
+      text-align: center;
+      background-color: #fff;
+      margin: auto;
+      padding:20px ;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-top: 40px;
+      
+   font-family: "EB Garamond", serif;
+    }
+
+    .branches {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin: 40px 0;
+    }
+
+    .branch {
+      width: 300px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .branch h3 {
+      margin: 15px 0 5px;
+      font-size: 20px;
+    
+    }
+
+    .phone {
+      color: #d11a7c;
+      font-weight: bold;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .phone::before {
+      content: "📞";
+      margin-left: 8px;
+    }
+
+    .social {
+      margin: 10px auto;
+    }
+
+    .social h3 {
+      font-size: 25px;
+      margin-bottom: 20px;
+       font-family: "EB Garamond", serif;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .icons img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .icons img:hover {
+      transform: scale(1.1);
+    }
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+}
+
+
+
+    
+
+
+
+
+
+   .parent {
+      margin-top: 10px;
+    }
+
+    .c {
+      font-size: 30px;
+      font-weight: bold;
+      font-family: 'Great Vibes', "cursive";
+    }
+
+    .slider-container {
+      position: relative;
+      width: 80%;
+      max-width: 1000px;
+      height: 600px; /* Fixed height */
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      background-color: #f9f9f9;
+    }
+
+    .slide {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures image fills the area consistently */
+     
+    }
+
+    .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  width: 40px;       /* Set equal width */
+  height: 40px;      /* Set equal height */
+  border-radius: 50%; /* perfect circle */
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;        /* remove padding to avoid oval shape */
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-arrow {
+  left: 15px;
+}
+
+.right-arrow {
+  right: 15px;
+}
+
+
+    @media (max-width: 600px) {
+      .arrow {
+        padding: 8px;
+        font-size: 18px;
+      }
+
+      .c {
+        font-size: 24px;
+      }
+
+      .slider-container {
+        height: 300px;
+      }
+    }
+
+
+    .slider-container {
+  position: relative;
+  width: 50%;
+  max-width: 1200px;
+  height: 90vh; /* Take up most of the viewport height */
+  margin: 10px auto;
+ overflow: visible;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;/* Scale and crop image to fill container */
+}
+
+
+.dots-container {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin:2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #717171;
+}
